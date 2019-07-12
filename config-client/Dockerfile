@@ -1,4 +1,4 @@
-FROM 192.168.56.60:5000/java:8
+FROM 172.16.12.101:5000/java:8
 VOLUME /tmp
 ADD target/scloudk8s.config.client-1.0-SNAPSHOT.jar app.jar
 RUN bash -c 'touch /app.jar'
